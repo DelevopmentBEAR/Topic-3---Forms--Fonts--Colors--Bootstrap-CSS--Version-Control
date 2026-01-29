@@ -1,0 +1,28 @@
+#test-only {
+    color: limegreen;
+}
+
+#real-alert {
+    color: red;
+    font-weight: bold;
+}
+
+.account-link {
+    border: 1px black solid;
+}
+.Warning.message {
+    color: darkmagenta;
+    font-style: italic;
+    font-weight: bold;
+    font-size: x-large;
+    text-decoration: underline;
+}
+
+.disabled {
+      pointer-events: none;
+      opacity: 0.45;
+      cursor: not-allowed;
+      text-decoration: none;
+    }
+
+.confirm-row { margin: 12px 0 16px;}

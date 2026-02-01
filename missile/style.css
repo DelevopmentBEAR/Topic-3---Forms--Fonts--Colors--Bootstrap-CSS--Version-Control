@@ -2,6 +2,19 @@
     color: limegreen;
 }
 
+#missile-alert-section {
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.real-alert-section {
+    background-color: darkred;
+}
+.test-alert-section {
+    background-color: darkgreen;
+}
+
 #real-alert {
     color: red;
     font-weight: bold;

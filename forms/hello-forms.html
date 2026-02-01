@@ -5,25 +5,37 @@
         <title>Hello Forms</title>
         </head>
     <body>
-        <p>Enter your name:</p>
-        <input type="text">
+        <label for="user-name" aria-required="true">Enter your name:</label>
+
+        <br>
+        <input type="text" id="user-name">
         <input type="number" value="0">
-        <br><br>
+
+        <br>
         <textarea rows="15" cols="50">Default text area content</textarea>
-         <br><br>
+
+        <br>
         <select>
             <option value="option1">Option 1</option>
             <option value="option2">Option 2</option>
             <option value="option3">Option 3</option>
             <option value="option4">Option 4</option>
         </select>
-        <br><br>
+
+        <br>
         <p>Delivery or Pickup?</p>
-        <input type="radio" name="deliveryOption" checked> Delivery
-        <input type="radio" name="deliveryOption"> Pickup
-        <br><br>
+        <input type="radio" name="deliveryOption" checked>Delivery
+        <input type="radio" name="deliveryOption">Pickup
+
+        <br>
         <p>Today or Later?</p>
-        <input type="radio" name="deliveryTime"> Today
-        <input type="radio" name="deliveryTime" checked> Later
+        <input type="radio" name="deliveryTime" id="delivery-now"> 
+        <label for="delivery-now">Today</label>
+        <input type="radio" name="deliveryTime" id="delivery-later" checked> 
+        <label for="delivery-later">Later</label>
+
+        <br>
+        <input type="checkbox" checked>
+        <input type="submit">
     </body>
 </html>

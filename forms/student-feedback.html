@@ -6,23 +6,38 @@
     <title>Hello Forms</title>
 </head>
 <body>
+    <!-- Student Feedback Form header -->
     <h1>Student Feedback Form</h1>
 
+    <!-- form wrapper -->
     <form>
+        <!-- Label for student name-->
         <label for="student-name">Name:</label>
+        <!-- Input type text, optional  -->
         <input type="text" id="student-name" name="student-name">
-        <br>
+        <!-- Breaks for webpage spacing -->
+        <br> 
+        <!-- Label for student email -->
         <label for="student-email">Email:</label>
+        <!-- Input type email, optional -->
         <input type="email" id="student-email" name="student-email">
         <br>
-        <label for="comments" aria-required="true">Comments:</label>
+        <!-- Label for student's comments -->
+        <label for="comments">Comments:</label>
         <br>
-        <textarea id="comments" name="comments"></textarea>
+        <!-- Text area for student comments, required -->
+        <textarea id="comments" name="comments" required></textarea>
         <br>
+        <!-- Label for current student radio buttons -->
         <label for="current-student">Are you a current student?</label>
-        <input type="radio"id="current-yes" checked>Yes
-        <input type="radio" id="current-no">No
+        <!-- Radio input button for yes -->
+        <input type="radio" id="current-yes" name="current-student" checked>Yes
+        <!-- Radio input button for no -->
+        <input type="radio" id="current-no" name="current-student">No
         <br>
+        <!-- Submit button -->
         <input type="submit">
+        <!-- End of form wrapper -->
+        </form>
 </body>
 </html>

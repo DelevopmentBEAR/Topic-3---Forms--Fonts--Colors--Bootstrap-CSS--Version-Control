@@ -3,44 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- Add our styles after boootstrap -->
+    <link rel="stylesheet" href="feedback-styles.css">
     <title>Student Feedback Form</title>
 </head>
-<body>
-    <!-- Student Feedback Form header -->
-    <h1>Please provide feedback. You may do so anonymously.</h1>
-
+<!-- Margin 3 from Bootstrap for Body -->
+<body class="m-3">
+    <!-- Div class with background color for header. margin, and padding -->
+    <div class="bg-primary-subtle mb-4 p-2 rounded-3">
+        <!-- Student Feedback Form header -->
+        <h1>Please provide feedback. You may do so anonymously.</h1>
+    </div>
     <!-- form wrapper -->
     <form>
         <!-- Label for student name-->
-        <label for="student-name">Name:</label>
+        <label class="form-label" for="student-name">Name:</label>
         <!-- Input type text, optional  -->
-        <input type="text" id="student-name" name="student-name">
+        <input class="form-control" type="text" id="student-name" name="student-name">
         <!-- Breaks for webpage spacing -->
         <br> 
         <!-- Label for student email -->
-        <label for="student-email">Email:</label>
+        <label class="form-label" for="student-email">Email:</label>
         <!-- Input type email, optional -->
-        <input type="email" id="student-email" name="student-email">
+        <input class="form-control" type="email" id="student-email" name="student-email">
         <br>
         <!-- Label for student's comments -->
-        <label for="comments">Comments:</label>
+        <label class="form-label" for="comments">Comments:</label>
         <br>
         <!-- Text area for student comments, required -->
-        <textarea id="comments" name="comments" required></textarea>
+        <textarea class="form-control" id="comments" name="comments" required></textarea>
         <br>
-        <!-- Label for current student radio buttons -->
-        <label for="current-student">Are you a current student?</label>
-        <!-- Radio input button for yes -->
-        <input type="radio" id="current-yes" name="current-student" checked>
-        <!-- Label for yes -->
-        <label for="current-yes">Yes</label>
-        <!-- Radio input button for no -->
-        <input type="radio" id="current-no" name="current-student">
-        <!-- Label for no -->
-        <label for="current-no">No</label>
+        <!-- P element question for current student radio buttons -->
+        <p class="mx-2">Are you a current student?</p>
+        <!-- Div with form-check class for Bootstrap styling -->
+        <div class="form-check">
+            <!-- Radio input button for yes -->
+            <input class="form-check-input" type="radio" id="current-yes" name="current-student" checked>
+            <!-- Label for yes -->
+            <label class="form-check-label" for="current-yes">Yes</label>
+        </div>
+        <!-- Div with form-check class for Bootstrap styling -->
+        <div class="form-check">
+             <!-- Radio input button for no -->
+             <input class="form-check-input" type="radio" id="current-no" name="current-student">
+              <!-- Label for no -->
+            <label class="form-check-label" for="current-no">No</label>
+        </div>
         <br>
         <!-- Submit button -->
-        <input type="submit">
+        <input class="btn btn-primary" type="submit">
         <!-- End of form wrapper -->
         </form>
 </body>
